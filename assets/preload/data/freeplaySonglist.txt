@@ -1,4 +1,5 @@
 Tutorial:gf:0
+Freedom Dive:bf:0
 Bopeebo:dad:1
 Fresh:dad:1
 Dad Battle:dad:1
