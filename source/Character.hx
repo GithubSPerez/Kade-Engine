@@ -380,15 +380,15 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'shaggy':
-					tex = Paths.getSparrowAtlas('shaggy');
+					tex = Paths.getSparrowAtlas('shaggy','shared',true);
 	
 					frames = tex;
 					animation.addByPrefix('idle', 'shaggy_idle', 24);
 					animation.addByPrefix('idle2', 'shaggy_idle2', 24);
-					animation.addByPrefix('singUP', 'shaggy_up', 20);
-					animation.addByPrefix('singRIGHT', 'shaggy_right', 20);
-					animation.addByPrefix('singDOWN', 'shaggy_down', 24);
-					animation.addByPrefix('singLEFT', 'shaggy_left', 24);
+					animation.addByPrefix('singUP', 'shaggy_up', 30);
+					animation.addByPrefix('singRIGHT', 'shaggy_right', 30);
+					animation.addByPrefix('singDOWN', 'shaggy_down', 30);
+					animation.addByPrefix('singLEFT', 'shaggy_left', 30);
 					animation.addByPrefix('catch', 'shaggy_catch', 30);
 					animation.addByPrefix('hold', 'shaggy_hold', 30);
 					animation.addByPrefix('h_half', 'shaggy_h_half', 30);
@@ -397,17 +397,18 @@ class Character extends FlxSprite
 	
 					animation.addByPrefix('power', 'shaggy_powerup', 30);
 					animation.addByPrefix('idle_s', 'shaggy_super_idle', 24);
-					animation.addByPrefix('singUP_s', 'shaggy_sup2', 20);
-					animation.addByPrefix('singRIGHT_s', 'shaggy_sright', 20);
-					animation.addByPrefix('singDOWN_s', 'shaggy_sdown', 24);
-					animation.addByPrefix('singLEFT_s', 'shaggy_sleft', 24);
+					animation.addByPrefix('singUP_s', 'shaggy_sup', 30);
+					animation.addByPrefix('singRIGHT_s', 'shaggy_sright', 30);
+					animation.addByPrefix('singDOWN_s', 'shaggy_sdown', 30);
+					animation.addByPrefix('singLEFT_s', 'shaggy_sleft', 30);
 	
 					addOffset('idle');
 					addOffset('idle2');
-					addOffset("singUP", -6, 0);
-					addOffset("singRIGHT", -20, -40);
-					addOffset("singLEFT", 100, -120);
-					addOffset("singDOWN", 0, -170);
+					addOffset("singUP", -15, 14);
+					addOffset("singRIGHT", -16, -40);
+					addOffset("singLEFT", 144, -120);
+					addOffset("singDOWN", -5, -166);
+					/*
 					addOffset("catch", 140, 90);
 					addOffset("hold", 90, 100);
 					addOffset("h_half", 90, 0);
@@ -420,7 +421,7 @@ class Character extends FlxSprite
 					addOffset("singRIGHT_s", -20, -40);
 					addOffset("singLEFT_s", 100, -120);
 					addOffset("singDOWN_s", 0, -170);
-	
+					*/
 					playAnim('idle');
 		}
 
